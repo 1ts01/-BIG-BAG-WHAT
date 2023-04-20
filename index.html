@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1660941438-PKpe4v2m" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "มาแล้วพี่จ๋าโค้ดฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1098669967391604818/1098670088745398303/02-01.jpeg?width=930&height=930",
+            "size": "full"
+          }
+        ],
+        "cornerRadius": "xxl",
+        "borderWidth": "medium",
+        "borderColor": "#ffffff"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "❤️‍🔥 แจกโค้ดฟรี 50฿ ทุกวัน ❤️‍🔥",
+                "color": "#c4fb00",
+                "align": "center",
+                "margin": "md",
+                "weight": "bold",
+                "size": "lg"
+              },
+              {
+                "type": "text",
+                "text": "รับได้ทุกคน ใหม่-เก่า รับได้หมด",
+                "color": "#FFFF00",
+                "align": "center",
+                "margin": "sm"
+              }
+            ],
+            "paddingAll": "md"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "รับโค้ดฟรี 50.-",
+                      "uri": "https://lin.ee/cxBE8Ze"
+                    },
+                    "color": "#Ffffff"
+                  }
+                ],
+                "backgroundColor": "#33FF00",
+                "cornerRadius": "xl",
+                "margin": "md",
+                "borderWidth": "medium",
+                "borderColor": "#ffffff",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#3baa05",
+                  "endColor": "#c4fb00"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#8f0bb6",
+      "endColor": "#290044"
+    },
+    "paddingAll": "lg"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
